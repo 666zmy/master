@@ -45,8 +45,10 @@ import {
   Descriptions,
   FormModel,
   Pagination,
-  Calendar
+  Calendar,
+  message
 } from 'ant-design-vue'
+Vue.prototype.$message = message // 把message绑定到vue原型中 这样在其他子组件也可以访问
 Vue.use(ConfigProvider)
 Vue.use(Layout)
 Vue.use(Input)

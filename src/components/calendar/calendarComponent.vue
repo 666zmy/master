@@ -38,6 +38,7 @@ export default {
       required: true
     }
   },
+  name:'calendar',
   data () {
     return {
       visible: false, // 预算 小弹框 显示隐藏
