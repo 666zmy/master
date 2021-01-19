@@ -18,7 +18,7 @@
         vue使用 Ueditor富文本编辑器
       </button>
       <button @click="$router.push('/websocket')">
-        websocket使用
+        websocket使用和html5桌面通知
       </button>
     </div>
     <div class="list">
