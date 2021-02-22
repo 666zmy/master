@@ -49,6 +49,18 @@ const routes = [
     {
         path: '/websocket',
         component: () => import('./../views/websocket') // 路由懒加载
+    },
+    {
+        path: '/render',
+        component: () => import('./../views/render') // 路由懒加载
+    },
+    {
+        path: '/ddVueH5SaoMaDengLu',
+        component: () => import('./../views/ddVueH5SaoMaDengLu') // 路由懒加载
+    },
+    {
+        path: '/vueTree',
+        component: () => import('./../views/vueTree') // 路由懒加载
     }
 ]
 const router = new VueRouter({

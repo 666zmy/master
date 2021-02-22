@@ -20,6 +20,15 @@
       <button @click="$router.push('/websocket')">
         websocket使用和html5桌面通知
       </button>
+      <button @click="$router.push('/render')">
+        render函数的使用
+      </button>
+      <button @click="$router.push('/ddVueH5SaoMaDengLu')">
+       基于钉钉的vue 后台管理系统 后台扫码登录功能
+      </button>
+      <button @click="$router.push('/vueTree')">
+     vue树形结构
+      </button>
     </div>
     <div class="list">
       <div class="list_item" v-for="(item,index) in null" :key="index">{{item}}级</div>

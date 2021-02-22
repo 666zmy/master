@@ -7,7 +7,9 @@ import store from "./store/index";
 import './perset'
 import './config/commnComponent'
 import './direction'
-import router from './router/index'
+import router from './router/index';
+import treeItem from "./views/components/treeItem.vue";
+Vue.component("treeItem",treeItem)
 Vue.config.productionTip = false;
 new Vue({
   store,
