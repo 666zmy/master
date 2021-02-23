@@ -16,5 +16,18 @@ module.exports = {
                 changeOrigin:true,
             }
         }
+    },
+    // vue 移动端项目中px2rem的配置
+    css: {
+        loaderOptions: {
+            css: {},
+            postcss: {
+                plugins:[
+                    require('postcss-px2rem')({
+                        remUnit: 37.5
+                    })
+                ]
+            }
+        }
     }
 }

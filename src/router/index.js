@@ -63,6 +63,26 @@ const routes = [
         component: () => import('./../views/vueTree') // 路由懒加载
     }
 ]
+// 权限控制
+// export const constantRouteMap = [ //都能访问路由
+//     {
+//         path: "/",
+//         redirect: "/login",
+//         hidden: true
+//     },
+//     {
+//         path: "/login",
+//         name: '登录页面'
+//     }
+// ]
+// 声明权限为admin的路由---异步挂载的路由asyncRouterMap
+// 异步挂载的路由
+// 动态需要根据权限加载的路由表
+// export const asyncRouterMap =[
+//     {
+        
+//     }
+// ]
 const router = new VueRouter({
     routes,
     mode: 'history'

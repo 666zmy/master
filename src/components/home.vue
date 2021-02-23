@@ -33,6 +33,7 @@
     <div class="list">
       <div class="list_item" v-for="(item,index) in null" :key="index">{{item}}级</div>
     </div>
+    <img :src="imgSrcObh.src"/>
   </div>
 </template>
 <script>
@@ -40,10 +41,13 @@ export default {
   data() {
     return {
       userid: [],
+      imgSrcObh:{
+        src: "http://chuantu.xyz/t6/741/1613985133x1700338641.jpg"
+      } 
     };
   },
   created() {
-    console.log(1111);
+    console.log(process.env,"process")
     setTimeout(() => {
       this.userid = [23343];
       if (localStorage.getItem("age")) {
